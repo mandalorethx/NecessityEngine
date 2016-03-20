@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{83208dd8-4503-41d5-bc3c-d4908a6dc310}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Utils">
+      <UniqueIdentifier>{1534a463-4c03-4669-9d72-81fe1f3c29f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Renderer">
+      <UniqueIdentifier>{f0a85675-ce40-489c-a2ad-7e27ab9f1cce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Engine">
+      <UniqueIdentifier>{76c73f4b-e303-48ae-b523-99ce7624afa7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Utils\MeshParser">
+      <UniqueIdentifier>{f9461939-8d02-4fd1-8f19-f076cd3b0acb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Utils\MeshParser\ObjParser">
+      <UniqueIdentifier>{7a5de413-b7ce-4855-943a-b7d2a336e28b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\NecessityEngine.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\NEFile.cpp">
+      <Filter>src\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\NEString.cpp">
+      <Filter>src\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\NELog.cpp">
+      <Filter>src\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\MeshParser\NEMeshParser.cpp">
+      <Filter>src\Utils\MeshParser</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\NecessityEngine.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\CommonDefs.h">
+      <Filter>src\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\NEFile.h">
+      <Filter>src\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\NEString.h">
+      <Filter>src\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\NELog.h">
+      <Filter>src\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderer\NERenderer.h">
+      <Filter>src\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderer\NEBuffer.h">
+      <Filter>src\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\NEBrick.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\MeshParser\NEMeshParser.h">
+      <Filter>src\Utils\MeshParser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\MeshParser\ObjParser\NEObjParser.h">
+      <Filter>src\Utils\MeshParser\ObjParser</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
