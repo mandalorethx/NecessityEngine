@@ -28,13 +28,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\NecessityEngine.cpp" />
+    <ClCompile Include="src\Utils\DataStructures\NEArray.cpp" />
     <ClCompile Include="src\Utils\MeshParser\NEMeshParser.cpp" />
+    <ClCompile Include="src\Utils\MeshParser\ObjParser\NEObjParser.cpp" />
     <ClCompile Include="src\Utils\NEFile.cpp" />
     <ClCompile Include="src\Utils\NELog.cpp" />
     <ClCompile Include="src\Utils\NEString.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Engine\NEBrick.h" />
+    <ClInclude Include="src\Engine\NEEngineDefs.h" />
+    <ClInclude Include="src\Engine\State\NEPipelineState.h" />
+    <ClInclude Include="src\Engine\State\NEShaderState.h" />
     <ClInclude Include="src\NecessityEngine.h" />
     <ClInclude Include="src\Renderer\NEBuffer.h" />
     <ClInclude Include="src\Renderer\NERenderer.h" />
@@ -44,6 +49,9 @@
     <ClInclude Include="src\Utils\NEFile.h" />
     <ClInclude Include="src\Utils\NELog.h" />
     <ClInclude Include="src\Utils\NEString.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\Utils\DataStructures\NEArray.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{031afaec-1616-4d31-9ad1-509233daf324}</ProjectGuid>

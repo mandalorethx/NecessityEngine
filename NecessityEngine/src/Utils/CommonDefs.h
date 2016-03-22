@@ -2,6 +2,7 @@
 
 #include <stdint.h>
 #include <stdlib.h>
+#include <cstring>
 
 typedef char int8;
 typedef unsigned char uint8;
@@ -13,10 +14,63 @@ typedef uint32 bool32;
 typedef int64_t int64;
 typedef uint64_t uint64;
 
+struct float2
+{
+    float x;
+    float y;
+};
+
+struct int2
+{
+    int32 x;
+    int32 y;
+};
+
+struct float3
+{
+    float x;
+    float y;
+    float z;
+};
+
+struct int3
+{
+    int32 x;
+    int32 y;
+    int32 z;
+};
+
+struct float4
+{
+    float x;
+    float y;
+    float z;
+    float w;
+};
+
+struct int4
+{
+    int32 x;
+    int32 y;
+    int32 z;
+    int32 w;
+};
+
+struct mat4x4
+{
+    float4 cx;
+    float4 cy;
+    float4 cz;
+    float4 cw;
+};
+
 typedef uint32 NEFlags;
 
 static const uint32 StringSize = 256;
 static const uint32 LargeStringSize = 1024;
+
+#define NEMax(x, y) (x > y ? x : y)
+#define NEMin(x, y) (x < y ? x : y)
 
 enum NEError
 {
@@ -26,39 +80,3 @@ enum NEError
     Error_BufferTooSmall = -3,
 };
 
-enum NEFormat
-{
-    NE_Format_UNDEFINED,
-    NE_Format_R8_UNORM,
-    NE_Format_R8_SRGB,
-    NE_Format_R8G8B8A8_UNORM,
-    NE_Format_R8G8B8A8_SRGB,
-    NE_Format_R16_UINT,
-    NE_Format_R16_SINT,
-    NE_Format_R16_SFLOAT,
-    NE_Format_R16G16_UINT,
-    NE_Format_R16G16_SINT,
-    NE_Format_R16G16_SFLOAT,
-    NE_Format_R16G16B16_UINT,
-    NE_Format_R16G16B16_SINT,
-    NE_Format_R16G16B16_SFLOAT,
-    NE_Format_R16G16B16A16_UINT,
-    NE_Format_R16G16B16A16_SINT,
-    NE_Format_R16G16B16A16_SFLOAT,
-    NE_Format_R32_UINT,
-    NE_Format_R32_SINT,
-    NE_Format_R32_SFLOAT,
-    NE_Format_R32G32_UINT,
-    NE_Format_R32G32_SINT,
-    NE_Format_R32G32_SFLOAT,
-    NE_Format_R32G32B32_UINT,
-    NE_Format_R32G32B32_SINT,
-    NE_Format_R32G32B32_SFLOAT,
-    NE_Format_R32G32B32A32_UINT,
-    NE_Format_R32G32B32A32_SINT,
-    NE_Format_R32G32B32A32_SFLOAT,
-    NE_Format_D16_UNORM,
-    NE_Format_D16_UNORM_S8_UINT,
-    NE_Format_D24_UNORM_S8_UINT,
-    NE_Format_D32_SFLOAT_S8_UINT,
-};

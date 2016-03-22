@@ -23,6 +23,12 @@
     <Filter Include="src\Utils\MeshParser\ObjParser">
       <UniqueIdentifier>{7a5de413-b7ce-4855-943a-b7d2a336e28b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Utils\DataStructures">
+      <UniqueIdentifier>{c9a3f9a0-1144-46a2-a667-523397e0f960}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Engine\State">
+      <UniqueIdentifier>{4efe2d4a-c8a9-4b29-816e-37d00b434a24}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\NecessityEngine.cpp">
@@ -39,6 +45,12 @@
     </ClCompile>
     <ClCompile Include="src\Utils\MeshParser\NEMeshParser.cpp">
       <Filter>src\Utils\MeshParser</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\DataStructures\NEArray.cpp">
+      <Filter>src\Utils\DataStructures</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\MeshParser\ObjParser\NEObjParser.cpp">
+      <Filter>src\Utils\MeshParser\ObjParser</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -72,5 +84,19 @@
     <ClInclude Include="src\Utils\MeshParser\ObjParser\NEObjParser.h">
       <Filter>src\Utils\MeshParser\ObjParser</Filter>
     </ClInclude>
+    <ClInclude Include="src\Engine\State\NEPipelineState.h">
+      <Filter>src\Engine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\State\NEShaderState.h">
+      <Filter>src\Engine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\NEEngineDefs.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\Utils\DataStructures\NEArray.h">
+      <Filter>src\Utils\DataStructures</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -1,24 +1,26 @@
 #pragma once
 
 #include "src\Utils\CommonDefs.h"
+#include "src\Engine\NEEngineDefs.h"
 #include "src\Utils\NEString.h"
 
 class NEMeshParser
 {
+public:
     NEMeshParser();
     ~NEMeshParser();
 
     NEError ParseFile(
         const char* pszFileName, 
-        uint32 nNumIndices, 
-        uint32* pIndices, 
-        uint32 nNumVertices, 
-        NEFormat ePositionFormat, 
-        void* pPositions, 
-        NEFormat eCoordFormat, 
-        void* pCoords, 
-        NEFormat eNormalFormat, 
-        void* pNormals);
+        uint32*     pNumIndices, 
+        uint32**    pIndices, 
+        uint32*     pNumVertices, 
+        NEFormat*   pPositionFormat, 
+        void**      pPositions, 
+        NEFormat*   pCoordFormat, 
+        void**      pCoords, 
+        NEFormat*   pNormalFormat, 
+        void**      pNormals);
 
 protected:
     enum ELineType
@@ -30,5 +32,5 @@ protected:
         LineType_Normal,
     };
 
-    virtual ELineType ParseLine(const char* pszLine, size_t* pSize, void* pData);
+    virtual ELineType ParseLine(const char* pszLine, size_t* pSize, uint8** pData);
 };
